@@ -16,14 +16,11 @@ Run the script and enter the target language code (e.g., `es` for Spanish) and t
 
 ```python
 from googletrans import Translator
-
 language = input("What language do you want to translate to? (e.g., 'es' for Spanish): ")
 text = input("Enter the text you want to translate: ")
-
-translator = Translator()
+translator = Translator() 
 translated = translator.translate(text, dest=language)
-
-print("Translated Text:", translated.text)
+print(translated.text)
 ```
 
 ## Language Codes
